@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Greatings.css';
+import '../css/Greatings.css';
 
 function Greatings() {
   return (

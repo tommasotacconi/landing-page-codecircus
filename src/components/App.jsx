@@ -1,6 +1,6 @@
 import React from 'react';
 import Hello from './Greatings.jsx';
-import '../App.css';
+import '../css/App.css';
 
 function App() {
   return (
