@@ -1,9 +1,10 @@
 import React from 'react';
+import React, { useEffect } from 'react';
 import '../scss/Header.scss';
 
 function Header() {
   return (
-    <>
+    <> 
         <div>
             <nav>
                 <img src="./images/logo.png" alt="logo" />
