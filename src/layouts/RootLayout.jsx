@@ -1,12 +1,24 @@
-import Routes from "../routes";
+import { NavLink, Outlet } from "react-router";
 
 export default function RootLayout() {
 	return (
 		<>
-			<h1>Header</h1>
-			<Routes>
-				<main>Contenuto pagina</main>
-			</Routes>
+			{/* Header */}
+			<header>
+				<h1>Header</h1>
+				<nav>
+					<ul>
+						<li><NavLink to="/">Home</NavLink></li>
+						<li><NavLink to="/contacts">Contacts</NavLink></li>
+					</ul>
+				</nav>
+			</header>
+
+			{/* Main contents */}
+			<main>
+				<Outlet />
+			</main>
+			{/* Footer */}
 			<footer>
 				<h1>Footer</h1>
 			</footer>
